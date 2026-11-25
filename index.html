@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>4 Tahun Kita | Our 4-Year Wrapped</title>
+    <meta
+      name="description"
+      content="Rangkuman perjalanan 4 tahun bersama (25 November 2022 - 25 November 2026)."
+    />
+    <meta name="theme-color" content="#1C1512" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-backdrop">
+      <button
+        type="button"
+        class="desktop-rail-btn desktop-rail-prev"
+        id="desktop-prev-btn"
+        aria-label="Slide sebelumnya"
+      >
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path
+            d="M15 18l-6-6 6-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+
+      <div class="story-shell" id="story-shell" data-theme="espresso">
+        <div class="intro-gate" id="intro-gate" role="region" aria-label="Pembuka kado 4 Tahun Kita">
+          <div class="intro-half intro-half-top">
+            <div class="intro-card-meta">
+              <p class="intro-archive-code">ARSIP NO. 04 · 25.11.2026</p>
+              <h2 class="intro-recipient" id="intro-recipient">Khusus untuk Mallaa</h2>
+              <p class="intro-sender" id="intro-sender">Dari Dafong</p>
+            </div>
+          </div>
+
+          <div class="intro-seam" aria-hidden="true"></div>
+
+          <button
+            type="button"
+            class="intro-seal-btn"
+            id="intro-open-btn"
+            aria-label="Buka sampul kado dan putar lagu"
+          >
+            <span class="intro-seal-ring" aria-hidden="true">
+              <span class="intro-seal-num">04</span>
+              <span class="intro-seal-text">Buka</span>
+            </span>
+          </button>
+
+          <div class="intro-half intro-half-bottom">
+            <p class="intro-prompt">Ketuk segel untuk membuka &amp; memutar lagu</p>
+            <button type="button" class="intro-silent-btn" id="intro-silent-btn">
+              Buka tanpa suara
+            </button>
+          </div>
+        </div>
+
+        <header class="story-header">
+          <div class="progress-track" id="progress-track" role="tablist" aria-label="Daftar slide cerita"></div>
+
+          <div class="header-toolbar">
+            <div class="header-meta">
+              <span class="slide-counter" id="slide-counter" aria-live="polite">1 / 9</span>
+              <span class="audio-pill" id="audio-status-label">Lagu siap</span>
+            </div>
+
+            <div class="header-actions">
+              <button
+                type="button"
+                class="icon-btn"
+                id="music-toggle-btn"
+                aria-pressed="false"
+                aria-label="Putar lagu latar"
+              >
+                <svg class="icon-music-play" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path
+                    d="M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm12-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span class="btn-text" id="music-btn-text">Putar</span>
+              </button>
+
+              <button
+                type="button"
+                class="icon-btn"
+                id="drawer-open-btn"
+                aria-haspopup="dialog"
+                aria-controls="chapter-drawer"
+                aria-expanded="false"
+                aria-label="Buka daftar bab"
+              >
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path
+                    d="M4 7h16M4 12h16M4 17h10"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.9"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <span class="btn-text">Bab</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <main class="story-stage" id="story-stage" tabindex="-1">
+          <!-- Slide 0: Cover -->
+          <section
+            class="story-slide is-active"
+            id="slide-0"
+            data-slide-index="0"
+            data-theme="espresso"
+            aria-label="Sampul 4 Tahun Kita"
+          >
+            <div class="slide-scroll slide-cover">
+              <div class="cover-top">
+                <p class="eyebrow" id="cover-eyebrow">25 Nov 2022 - 25 Nov 2026</p>
+                <h1 class="cover-title" id="cover-title">4 Tahun Kita.</h1>
+                <p class="cover-subtitle" id="cover-subtitle"></p>
+              </div>
+
+              <div class="cover-visual-stack">
+                <div class="vinyl-stage">
+                  <div class="vinyl-slide-wrap" id="vinyl-slide-wrap" aria-hidden="true">
+                    <div class="vinyl-disc" id="vinyl-disc">
+                      <div class="vinyl-grooves"></div>
+                      <div class="vinyl-label">
+                        <span class="vinyl-label-artist" id="vinyl-artist">Rex Orange County</span>
+                        <span class="vinyl-label-title" id="vinyl-song">Hannah Montana</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <figure class="photo-frame cover-sleeve is-loading" id="cover-photo-frame">
+                    <img id="cover-photo-img" alt="" width="400" height="400" fetchpriority="high" />
+                    <div class="photo-placeholder" aria-hidden="true">
+                      <span class="placeholder-tag">SAMPUL BERDUA</span>
+                      <span class="placeholder-hint">Taruh file di:</span>
+                      <code>assets/foto1th-4th/cover.jpg</code>
+                    </div>
+                  </figure>
+                </div>
+
+                <div class="now-playing-bar">
+                  <span class="eq-bars" id="eq-bars" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </span>
+                  <span class="now-playing-text" id="now-playing-text">
+                    Rex Orange County - Hannah Montana
+                  </span>
+                </div>
+              </div>
+
+              <div class="cover-cta-group">
+                <button type="button" class="btn-primary" id="start-with-music-btn">
+                  Mulai &amp; Putar Lagu
+                </button>
+                <button type="button" class="btn-ghost-dark" id="start-silent-btn">
+                  Buka Tanpa Musik
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Slide 1: Big Number -->
+          <section
+            class="story-slide"
+            id="slide-1"
+            data-slide-index="1"
+            data-theme="cream"
+            aria-label="Angka Perjalanan Kita"
+            hidden
+          >
+            <div class="slide-scroll slide-number">
+              <p class="eyebrow eyebrow-dark" id="number-eyebrow">Angka Perjalanan Kita</p>
+
+              <div class="hero-stat-block">
+                <h2 class="mega-number" id="mega-days">1.461</h2>
+                <p class="mega-label" id="mega-label">Hari Bareng</p>
+              </div>
+
+              <dl class="calendar-breakdown" id="calendar-breakdown">
+                <div class="breakdown-item">
+                  <dt>Tahun</dt>
+                  <dd id="stat-years">4</dd>
+                </div>
+                <div class="breakdown-item">
+                  <dt>Bulan</dt>
+                  <dd id="stat-months">48</dd>
+                </div>
+                <div class="breakdown-item">
+                  <dt>Minggu</dt>
+                  <dd id="stat-weeks">208</dd>
+                </div>
+                <div class="breakdown-item">
+                  <dt>Jam</dt>
+                  <dd id="stat-hours">35.064</dd>
+                </div>
+              </dl>
+
+              <p class="editorial-note" id="number-note"></p>
+            </div>
+          </section>
+
+          <!-- Slide 2: Chapter 1 (Mahogany) -->
+          <section
+            class="story-slide"
+            id="slide-2"
+            data-slide-index="2"
+            data-theme="mahogany"
+            aria-label="Tahun Pertama"
+            hidden
+          >
+            <div class="slide-scroll slide-chapter slide-chapter-mahogany" data-chapter-slot="0"></div>
+          </section>
+
+          <!-- Slide 3: Chapter 2 (Cream Editorial Split) -->
+          <section
+            class="story-slide"
+            id="slide-3"
+            data-slide-index="3"
+            data-theme="cream"
+            aria-label="Tahun Kedua"
+            hidden
+          >
+            <div class="slide-scroll slide-chapter slide-chapter-cream" data-chapter-slot="1"></div>
+          </section>
+
+          <!-- Slide 4: Chapter 3 (Crimson Letterbox) -->
+          <section
+            class="story-slide"
+            id="slide-4"
+            data-slide-index="4"
+            data-theme="crimson"
+            aria-label="Tahun Ketiga"
+            hidden
+          >
+            <div class="slide-scroll slide-chapter slide-chapter-crimson" data-chapter-slot="2"></div>
+          </section>
+
+          <!-- Slide 5: Chapter 4 (Espresso Hero Top) -->
+          <section
+            class="story-slide"
+            id="slide-5"
+            data-slide-index="5"
+            data-theme="espresso"
+            aria-label="Tahun Keempat"
+            hidden
+          >
+            <div class="slide-scroll slide-chapter slide-chapter-espresso" data-chapter-slot="3"></div>
+          </section>
+
+          <!-- Slide 6: 4 Kupon Untukmu -->
+          <section
+            class="story-slide"
+            id="slide-6"
+            data-slide-index="6"
+            data-theme="cream"
+            aria-label="4 Kupon Untukmu"
+            hidden
+          >
+            <div class="slide-scroll slide-vouchers">
+              <div class="vouchers-header">
+                <p class="eyebrow eyebrow-dark" id="vouchers-eyebrow">Khusus Tahun Ke-5</p>
+                <h2 class="section-heading-dark" id="vouchers-title">4 Kupon Untukmu</h2>
+                <p class="section-sub-dark" id="vouchers-subtitle"></p>
+              </div>
+
+              <div class="vouchers-meta-row">
+                <span class="vouchers-count-pill" id="vouchers-count" aria-live="polite">0 / 4 diklaim</span>
+              </div>
+
+              <div class="voucher-list" id="voucher-list"></div>
+            </div>
+          </section>
+
+          <!-- Slide 7: Contact Sheet Gallery -->
+          <section
+            class="story-slide"
+            id="slide-7"
+            data-slide-index="7"
+            data-theme="charcoal"
+            aria-label="Mini Galeri Kenangan"
+            hidden
+          >
+            <div class="slide-scroll slide-gallery">
+              <div class="gallery-header">
+                <p class="eyebrow" id="gallery-eyebrow">Contact Sheet</p>
+                <h2 class="section-heading-light" id="gallery-title">Potongan Kecil yang Disimpan</h2>
+                <p class="section-sub-light" id="gallery-subtitle"></p>
+              </div>
+
+              <div class="contact-sheet-grid" id="contact-sheet-grid"></div>
+            </div>
+          </section>
+
+          <!-- Slide 8: Envelope & Letter -->
+          <section
+            class="story-slide"
+            id="slide-8"
+            data-slide-index="8"
+            data-theme="cream"
+            aria-label="Surat Untukmu"
+            hidden
+          >
+            <div class="slide-scroll slide-letter">
+              <div class="letter-burst-layer" id="letter-burst-layer" aria-hidden="true"></div>
+
+              <div class="letter-header">
+                <p class="eyebrow eyebrow-dark" id="letter-eyebrow">Untuk Hari Ini</p>
+                <h2 class="section-heading-dark" id="letter-title">Surat Tahun Ke-4</h2>
+              </div>
+
+              <div class="envelope-stage" id="envelope-stage" data-open="false">
+                <div class="envelope-sealed-card" id="envelope-sealed-card">
+                  <div class="envelope-flap" aria-hidden="true"></div>
+                  <div class="envelope-front-copy">
+                    <p class="envelope-to" id="envelope-to">Untuk Mallaa</p>
+                    <p class="envelope-date">25 November 2026</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="wax-seal-btn"
+                    id="open-letter-btn"
+                    aria-expanded="false"
+                    aria-controls="letter-paper"
+                  >
+                    <span class="wax-seal-mark" aria-hidden="true">04</span>
+                    <span>Buka Surat</span>
+                  </button>
+                </div>
+
+                <article class="letter-paper" id="letter-paper" hidden>
+                  <p class="letter-greeting" id="letter-greeting"></p>
+                  <div class="letter-body" id="letter-body"></div>
+                  <div class="letter-signoff">
+                    <p class="letter-closing" id="letter-closing"></p>
+                    <p class="letter-signature" id="letter-signature"></p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="letter-footer-actions">
+                <button type="button" class="btn-secondary-cream" id="restart-story-btn">
+                  Ulangi dari Awal
+                </button>
+                <button type="button" class="btn-outline-cream" id="letter-music-btn">
+                  Putar Lagu
+                </button>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <nav class="story-controls" aria-label="Navigasi cerita">
+          <div class="nav-capsule">
+            <button type="button" class="nav-btn nav-prev" id="prev-slide-btn" aria-label="Slide sebelumnya">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path
+                  d="M15 18l-6-6 6-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <span class="nav-capsule-divider" aria-hidden="true"></span>
+
+            <button type="button" class="nav-btn nav-next" id="next-slide-btn" aria-label="Slide berikutnya">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path
+                  d="M9 18l6-6-6-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        <div class="audio-toast" id="audio-toast" role="status" aria-live="polite" hidden></div>
+
+        <!-- Chapter Jump Drawer -->
+        <div
+          class="modal-overlay"
+          id="chapter-drawer"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="drawer-title"
+          hidden
+        >
+          <div class="drawer-panel">
+            <div class="drawer-head">
+              <h2 class="drawer-title" id="drawer-title">Daftar Halaman</h2>
+              <button
+                type="button"
+                class="close-circle-btn"
+                id="drawer-close-btn"
+                aria-label="Tutup daftar halaman"
+              >
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path
+                    d="M18 6L6 18M6 6l12 12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ol class="drawer-list" id="drawer-list"></ol>
+          </div>
+        </div>
+
+        <!-- Photo Lightbox Modal -->
+        <div
+          class="modal-overlay"
+          id="lightbox-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="lightbox-roll"
+          hidden
+        >
+          <div class="lightbox-panel">
+            <div class="lightbox-head">
+              <span class="lightbox-roll" id="lightbox-roll">ROLL 01</span>
+              <button
+                type="button"
+                class="close-circle-btn"
+                id="lightbox-close-btn"
+                aria-label="Tutup pratinjau foto"
+              >
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <path
+                    d="M18 6L6 18M6 6l12 12"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <figure class="photo-frame lightbox-frame is-loading" id="lightbox-frame">
+              <img id="lightbox-img" alt="" width="600" height="750" />
+              <div class="photo-placeholder" aria-hidden="true">
+                <span class="placeholder-tag">FOTO CANDID</span>
+                <span class="placeholder-hint">Taruh file di:</span>
+                <code id="lightbox-file-hint">assets/foto1th-4th/candid-1.jpg</code>
+              </div>
+            </figure>
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+            <div class="lightbox-nav">
+              <button
+                type="button"
+                class="lightbox-nav-btn"
+                id="lightbox-prev-btn"
+                aria-label="Foto sebelumnya"
+              >
+                Sebelumnya
+              </button>
+              <span class="lightbox-counter" id="lightbox-counter" aria-live="polite">1 / 8</span>
+              <button
+                type="button"
+                class="lightbox-nav-btn"
+                id="lightbox-next-btn"
+                aria-label="Foto berikutnya"
+              >
+                Berikutnya
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="desktop-rail-btn desktop-rail-next"
+        id="desktop-next-btn"
+        aria-label="Slide berikutnya"
+      >
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path
+            d="M9 18l6-6-6-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <audio id="bg-audio" preload="metadata"></audio>
+    <script src="./data.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
